@@ -1,5 +1,0 @@
-# git fetch
-git add .
-git commit -m "commit by autocmt"
-echo "Please use git push to push origin."
-echo "Don't use autopush because of repeated commands"

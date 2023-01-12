@@ -1,62 +1,3 @@
-# Linux Tools
-
-**IMPORTANT NOTICE: This repository is out of maintenance, please check [dotfiles](https://github.com/njughr/dotfiles) for the latest updates.**
-
-My linux toys
-
-## autopush
-
-**this script will excute these commands below to save your push time**
-
-```shell
-git add .
-git commit -m "push by ghr_auto_push"
-git push
-```
-
-**To use this, you need to add PATH in your `.bashrc`**
-
-```bash
-PATH=$PATH:/home/geng/work/ghrtools
-export PATH
-```
-
-## RegexManual
-
-```css
-abc… 	Letters
-123… 	Digits
-\d 	Any Digit
-\D 	Any Non-digit character
-. 	Any Character
-\. 	Period
-[abc] 	Only a, b, or c
-[^abc] 	Not a, b, nor c
-[a-z] 	Characters a to z
-[0-9] 	Numbers 0 to 9
-\w 	Any Alphanumeric character = [A-Za-z0-9_]
-\W 	Any Non-alphanumeric character
-{m} 	m Repetitions
-{m,n} 	m to n Repetitions
-* 	Zero or more repetitions
-+ 	One or more repetitions
-? 	Optional character
-\s 	Any Whitespace
-\S 	Any Non-whitespace character
-^…$ 	Starts and ends
-(…) 	Capture Group
-(a(bc)) 	Capture Sub-group
-(.*) 	Capture all
-(abc|def) 	Matches abc or def
-\b matches the boundary between a word and a non-word character.
-\w+\b
-```
-### findvnc
-
-```
-| grep desktop | sed -E 's/^.*\(([a-z]+)\).*rfbport ([0-9]+) .*$/\1: \2/' | sort | awk 'BEGIN{FS=":";OFS=":"}{a[$1]=a[$1] $2}END{for(v in a)print v,a[v]}' | sort
-```
-
 # Windows Tools
 
 ## Explorer_Restarter
@@ -97,5 +38,21 @@ int main(){
 	
 } 
 ```
+
+![image-20230112211735966](README.assets/image-20230112211735966.png)
+
+## TwoPowerHelper
+
+Help you become familiar with powers of 2
+
+| exp  | pwr   | exp  | pwr    | exp  | pwr    | exp  | pwr    |
+| ---- | ----- | ---- | ------ | ---- | ------ | ---- | ------ |
+| 2^0  | 1     | 2^1  | 2      | 2^2  | 4      | 2^3  | 8      |
+| 2^4  | 16    | 2^5  | 32     | 2^6  | 64     | 2^7  | 128    |
+| 2^8  | 256   | 2^9  | 512    | 2^10 | 1024   | 2^11 | 2048   |
+| 2^12 | 4096  | 2^13 | 8192   | 2^14 | 16384  | 2^15 | 32768  |
+| 2^16 | 65536 | 2^17 | 131072 | 2^18 | 262144 | 2^19 | 524288 |
+
+![InputRange](README.assets/InputRange.jpg)
 
 # THE END
